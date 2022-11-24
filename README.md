@@ -9,11 +9,14 @@ Install Udroid Ubuntu & Termux-x11 : https://github.com/RandomCoderOrg/ubuntu-on
 
 Compile Box86 & Box64 with dynarec in ubuntu: 
 https://github.com/ptitSeb/box86
+
 https://github.com/ptitSeb/box64
+
 https://github.com/fengxue-jrql/box86-and-box64-for-arm64/blob/main/How%20to%20set%20the%20environment
 
 PlayOnLinux (wine) : 
 https://www.playonlinux.com/wine/binaries/phoenicis/upstream-linux-x86/PlayOnLinux-wine-7.0-rc4-upstream-linux-x86.tar.gz
+
 https://www.playonlinux.com/wine/binaries/phoenicis/upstream-linux-amd64/PlayOnLinux-wine-6.14-upstream-linux-amd64.tar.gz
 
 ############3
