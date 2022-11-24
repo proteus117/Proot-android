@@ -56,6 +56,10 @@ LD_PRELOAD='' git clone --depth 1 https://github.com/glmark2/glmark2.git
 
 curl -LO https://dri.freedesktop.org/libdrm/libdrm-2.4.109.tar.xz
 
+#################
+building packages
+#################
+
 cd ~/dir/xorgproto
 
 ./autogen.sh --prefix=$PREFIX --with-xmlto=no --with-fop=no --with-xsltproc=no
