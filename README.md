@@ -1,5 +1,7 @@
 # Proot-android
 
+This was done on Android 13 on a Snapdragon 8 Gen 1 processor. Please note that it is compiled with Turnip+Zink options but these do not function on Snapdragon 8 Gen 1 in my testing. GLES functions.
+
 ############3
 Download maintained termux apk version from f-droid store (free and open source) :
 
