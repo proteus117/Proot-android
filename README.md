@@ -155,7 +155,7 @@ make -j3 install
 
 cd ~/tmp/libepoxy
 
-applied patch from patches in "instructions-v2.tar.gz" : https://github.com/suhan-paradkar/tewmux-disabled/re>
+applied patch from patches in "instructions-v2.tar.gz" : https://github.com/suhan-paradkar/tewmux-disabled/releases/tag/mesa-hw-v2
 
 in the file ~/tmp/libepoxy/src/dispatch_common.c find #elif defined(__ANDROID__) and replace it with #elif fa>
 
