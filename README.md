@@ -75,13 +75,13 @@ curl -LO https://dri.freedesktop.org/libdrm/libdrm-2.4.109.tar.xz
 building packages
 #################
 
-cd ~/dir/xorgproto
+cd ~/tmp/xorgproto
 
 ./autogen.sh --prefix=$PREFIX --with-xmlto=no --with-fop=no --with-xsltproc=no
 
 make -j3 install
 
-cd ~/dir/wayland
+cd ~/tmp/wayland
 
 mkdir build
 
@@ -91,7 +91,7 @@ meson -Dprefix=$PREFIX -Ddocumentation=false ..
 
 ninja -j3 install
 
-cd ~/dir/wayland-protocols
+cd ~/tmp/wayland-protocols
 
 mkdir build
 
@@ -113,7 +113,7 @@ sed -i s/values.h/limits.h/ ./src/xshmfence_futex.h
 
 make -j3 install CPPFLAGS=-DMAXINT=INT_MAX
 
-cd ~/dir
+cd ~/tmp
 
 tar -xf libdrm-2.4.109.tar.xz
 
@@ -147,7 +147,7 @@ rm $PREFIX/lib/libGL.so*
 
 ninja install
 
-cd ~/dir/libsha1
+cd ~/tmp/libsha1
 
 ./autogen.sh --prefix=$PREFIX
 
@@ -171,7 +171,7 @@ rm $PREFIX/lib/libepoxy.so*
 
 ninja install
 
-cd ~/dir/xorg-server-1.20.14
+cd ~/tmp/xorg-server-1.20.14
 
 git apply ~/instructions-v2/patches/xorg-server/xorg-server-1.20.14.patch
 
@@ -179,7 +179,7 @@ git apply ~/instructions-v2/patches/xorg-server/xorg-server-1.20.14.patch
 
 make install -j3 LDFLAGS=' -fuse-ld=lld /data/data/com.termux/files/usr/lib/libandroid-shmem.a -llog'
 
-cd ~/dir/glmark2
+cd ~/tmp/glmark2
 
 mkdir build
 
