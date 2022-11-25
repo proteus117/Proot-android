@@ -124,6 +124,7 @@ mkdir build
 cd build
 
 meson -Dprefix=$PREFIX -Dintel=false -Dradeon=false -Damdgpu=false -Dnouveau=false -Dvmwgfx=false -Dvc4=false ..
+
 ninja -j3 install
 
 cd ~/tmp/mesa
